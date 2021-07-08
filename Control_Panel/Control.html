@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="panel.css">
+<title>Control Panel</title>
+</head>
+<body>
+<header>Control Panel - Engines</header>
+
+<center>
+<form action="Control.php" method="post">
+<div>
+ <p> Engine 1 </p> <input type="range" min="0" max="100" value="0" class="engine" id="eng1" name="eng1">  <span id="val1"></span>
+<br><br>
+
+ <p> Engine 2 </p> <input type="range" min="0" max="100" value="0" class="engine" id="eng2" name="eng2">   <span id="val2"></span>
+
+<br><br>
+
+ <p> Engine 3 </p> <input type="range" min="0" max="100" value="0" class="engine" id="eng3" name="eng3">   <span id="val3"></span>
+
+<br><br>
+
+ <p> Engine 4 </p>  <input type="range" min="0" max="100" value="0" class="engine" id="eng4" name="eng4">   <span id="val4"></span>
+
+<br><br>
+
+ <p> Engine 5 </p> <input type="range" min="0" max="100" value="0" class="engine" id="eng5" name="eng5">   <span id="val5"></span>
+
+<br><br>
+
+ <p> Engine 6</p> <input type="range" min="0" max="100" value="0" class="engine" id="eng6" name="eng6">   <span id="val6"></span>
+</div>
+  <button class="button1" name="submit">Save</button> 
+ <button class="button2"  name="Run">Run</button>
+</form>
+
+
+
+
+
+<script>
+
+var engine1 = document.getElementById("eng1");
+var result1 = document.getElementById("val1");
+
+result1.innerHTML = engine1.value;
+
+engine1.oninput = function() {
+  result1.innerHTML = this.value;
+}
+
+var engine2 = document.getElementById("eng2");
+var result2 = document.getElementById("val2");
+
+result2.innerHTML = engine2.value;
+
+engine2.oninput = function() {
+  result2.innerHTML = this.value;
+}
+
+
+var engine3 = document.getElementById("eng3");
+var result3 = document.getElementById("val3");
+
+result3.innerHTML = engine3.value;
+
+engine3.oninput = function() {
+  result3.innerHTML = this.value;
+}
+
+
+var engine4 = document.getElementById("eng4");
+var result4 = document.getElementById("val4");
+
+result4.innerHTML = engine4.value;
+
+engine4.oninput = function() {
+  result4.innerHTML = this.value;
+}
+
+var engine5 = document.getElementById("eng5");
+var result5 = document.getElementById("val5");
+
+result5.innerHTML = engine5.value;
+
+engine5.oninput = function() {
+  result5.innerHTML = this.value;
+}
+
+
+var engine6 = document.getElementById("eng6");
+var result6 = document.getElementById("val6");
+
+result6.innerHTML = engine6.value;
+
+engine6.oninput = function() {
+  result6.innerHTML = this.value;
+}
+
+
+</script>
+</center>
+<a href="control_movement.html" class="next ">&#8250;</a>
+</body>
+</html>
